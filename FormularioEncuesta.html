@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Encuesta Epilepsia</title>
+
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="screen" />
+
+		
+	<meta name="author" content="Oriana Osorio">
+	<meta name="description" content="Encuesta de calidad de vida en personas epilepticas">
+	<meta name="keywords" content="html,css,js,php">
+
+</head>
+
+
+<body>
+
+<h1>Calidad de vida</h1>
+
+<img src="images/imagen.jpg" width="400" height="300"  align="right" border="2">
+
+<form name="frm" id="frm" method="post" enctype="">
+Nombres: <input type="text" name="nombres" id="nombres" size="20" maxlength="50" required placeholder="Digite su nombre" =""><br>
+<br>	
+Apellidos: <input type="text" name="apellidos" id="apellidos" size="20" maxlength="50" required placeholder="Digite su apellido" = ""><br>	
+<br>
+Telefono: <input type="text" name="telefono" id="telefono" size="20" maxlength="15"><br>	
+<br>
+email: <input type="email" name="email" id="email" size="20" maxlength="100" required=""><br>	
+<br>
+edad: <input type="text" name="edad" id="edad" size="4" maxlength="10" required=""><br>	
+<br>
+
+Sexo:
+<select name="sexo" id="sexo">
+<option value="">Seleccione...</option>
+<option value="F">Femenino</option>	
+<option value="M">Masculino</option>	
+<option value="O">Otros</option>	
+</select><br>
+<br>
+
+Estado civil:
+<input type="radio" name="estado civil" id="estado civil" value="C">Casado(a)
+<input type="radio" name="estado civil" id="estado civil" value="S">Soltero(a)
+
+<br>
+<br>
+
+
+Estas preguntas son acerca de cómo te sientes y cómo las cosas han sido para ti durante las últimas 4 semanas. Por cada pregunta, por favor indique la respuesta que más se acerca a la forma en que se ha sentido.
+<br>
+<br>
+COMO SE HA SENTIDO
+<br>
+<br>
+1. Durante las últimas 4 semanas en general como calificaria su calidad de vida:
+
+<br>
+<br>
+Siendo 5 la mejor calidad de vida posible y 0 la Peor calidad de vida posible (Tan malo o peor que estar muerto)
+
+<br>
+<br>
+<select name="calidad" id="calidad" onchange="validar();">
+<option value="">Seleccione...</option>
+<option value="5">5</option>	
+<option value="4">4</option>
+<option style="background:url 5.png no-repeat center left; padding-left:20px;">6</option> 	
+<option value="3">3</option>
+<option value="2">2</option>	
+<option value="1">1</option>	
+<option value="0">0</option>
+</select><br>
+<br>
+
+2. ¿En las últimas cuatro semanas se sintió lleno de energía?
+
+<br>
+<img src="images/energia.jpg" width="100" height=""  align="middle" border="0">
+
+<br>
+<br>
+<select name="energia" id="energia" onchange="validar();">
+<option value="">Seleccione...</option>
+<option value="5">todo el tempo</option>	
+<option value="4">la mayoría del tiempo</option>
+<option value="3">poco del tiempo</option>
+<option value="2">Algo de tiempo</option>	
+<option value="1">Poco tiempo</option>	
+<option value="0">Ningun momento</option>
+</select><br>
+<br>
+
+
+3. ¿En las últimas cuatro semanas has sido una persona nerviosa?
+
+
+<br>
+<br>
+<select name="nerviosa" id="nerviosa" onchange="validar();">
+<option value="">Seleccione...</option>
+<option value="5">todo el tempo</option>	
+<option value="4">la mayoría del tiempo</option>
+<option value="3">poco del tiempo</option>
+<option value="2">Algo de tiempo</option>	
+<option value="1">Poco tiempo</option>	
+<option value="0">Ningun momento</option>
+</select><br>
+<br>
+
+
+4. ¿En las últimas cuatro semanas te has sentido tan deprimido que nada podría animarte?
+
+<br>
+<br>
+<select name="deprimida" id="deprimida" onchange="validar();">
+<option value="">Seleccione...</option>
+<option value="5">todo el tempo</option>	
+<option value="4">la mayoría del tiempo</option>
+<option value="3">poco del tiempo</option>
+<option value="2">Algo de tiempo</option>	
+<option value="1">Poco tiempo</option>	
+<option value="0">Ningun momento</option>
+</select><br>
+<br>
+
+
+5. ¿En las últimas cuatro semanas te has sentido tranquilo y pacífico?
+
+<br>
+<br>
+<select name="tranquilo" id="tranquilo" onchange="validar();">
+<option value="">Seleccione...</option>
+<option value="5">todo el tempo</option>	
+<option value="4">la mayoría del tiempo</option>
+<option value="3">poco del tiempo</option>
+<option value="2">Algo de tiempo</option>	
+<option value="1">Poco tiempo</option>	
+<option value="0">Ningun momento</option>
+</select><br>
+<br>
+
+
+6. ¿En las últimas cuatro semanas tuviste mucha energía?
+
+<br>
+<br>
+<select name="menergia" id="menergia" onchange="validar();">
+<option value="">Seleccione...</option>
+<option value="5">todo el tempo</option>	
+<option value="4">la mayoría del tiempo</option>
+<option value="3">poco del tiempo</option>
+<option value="2">Algo de tiempo</option>	
+<option value="1">Poco tiempo</option>	
+<option value="0">Ningun momento</option>
+</select><br>
+<br>
+
+
+
+7. ¿En las últimas cuatro semanas te has sentido triste y deprimido?
+
+<br>
+<img src="images/triste.jpg" width="100" height=""  align="middle" border="0">
+
+<br>
+<br>
+<select name="triste" id="triste" onchange="validar();">
+<option value="">Seleccione...</option>
+<option value="5">todo el tempo</option>	
+<option value="4">la mayoría del tiempo</option>
+<option value="3">poco del tiempo</option>
+<option value="2">Algo de tiempo</option>	
+<option value="1">Poco tiempo</option>	
+<option value="0">Ningun momento</option>
+</select><br>
+<br>
+
+
+8. ¿En las últimas cuatro semanas te sentiste agotado?
+
+<br>
+<br>
+<select name="agotado" id="agotado" onchange="validar();">
+<option value="">Seleccione...</option>
+<option value="5">todo el tempo</option>	
+<option value="4">la mayoría del tiempo</option>
+<option value="3">poco del tiempo</option>
+<option value="2">Algo de tiempo</option>	
+<option value="1">Poco tiempo</option>	
+<option value="0">Ningun momento</option>
+</select><br>
+<br>
+
+
+9. ¿En las últimas cuatro semanas has sido una persona feliz?
+
+<br>
+<img src="images/feliz.jpg" width="100" height=""  align="middle" border="0">
+
+<br>
+<br>
+<select name="feliz" id="feliz" onchange="validar();">
+<option value="">Seleccione...</option>
+<option value="5">todo el tempo</option>	
+<option value="4">la mayoría del tiempo</option>
+<option value="3">poco del tiempo</option>
+<option value="2">Algo de tiempo</option>	
+<option value="1">Poco tiempo</option>	
+<option value="0">Ningun momento</option>
+</select><br>
+<br>
+
+
+10. ¿En las últimas cuatro semanas te sentiste cansado?
+
+<br>
+<br>
+<select name="cansado" id="cansado" onchange="validar();">
+<option value="">Seleccione...</option>
+<option value="5">todo el tempo</option>	
+<option value="4">la mayoría del tiempo</option>
+<option value="3">poco del tiempo</option>
+<option value="2">Algo de tiempo</option>	
+<option value="1">Poco tiempo</option>	
+<option value="0">Ningun momento</option>
+</select><br>
+<br>
+
+
+11. ¿En las últimas cuatro semanas le preocupa tener otra convulsión?
+
+<br>
+<br>
+<select name="ataque" id="ataque" onchange="validar();">
+<option value="">Seleccione...</option>
+<option value="5">todo el tempo</option>	
+<option value="4">la mayoría del tiempo</option>
+<option value="3">poco del tiempo</option>
+<option value="2">Algo de tiempo</option>	
+<option value="1">Poco tiempo</option>	
+<option value="0">Ningun momento</option>
+</select><br>
+<br>
+
+
+12. ¿En las últimas cuatro semanas tuvo dificultades para razonar y resolver problemas (como hacer planes, tomar decisiones, aprender cosas nuevas)?
+
+<br>
+<br>
+<select name="razonar" id="razonar" onchange="validar();">
+<option value="">Seleccione...</option>
+<option value="5">todo el tempo</option>	
+<option value="4">la mayoría del tiempo</option>
+<option value="3">poco del tiempo</option>
+<option value="2">Algo de tiempo</option>	
+<option value="1">Poco tiempo</option>	
+<option value="0">Ningun momento</option>
+</select><br>
+<br>
+
+
+13. ¿En las últimas cuatro semanas ha limitado su salud actividades sociales (como visitar amigos o parientes cercanos)?
+<br>
+<br>
+<select name="amigos" id="amigos" onchange="validar();">
+<option value="">Seleccione...</option>
+<option value="5">todo el tempo</option>	
+<option value="4">la mayoría del tiempo</option>
+<option value="3">poco del tiempo</option>
+<option value="2">Algo de tiempo</option>	
+<option value="1">Poco tiempo</option>	
+<option value="0">Ningun momento</option>
+</select><br>
+<br>
+
+COMO HAN SIDO LAS COSAS PARA USTED
+<br>
+<br>
+
+14. ¿Cómo ha sido la calidad de su vidad en las últimas cuatro semanas (es decir, como han sido las cosas para usted)?
+<br>
+<br>
+<select name="vida" id="vida" onchange="validar();">
+<option value="">Seleccione...</option>
+<option value="5">todo el tempo</option>	
+<option value="4">la mayoría del tiempo</option>
+<option value="3">poco del tiempo</option>
+<option value="2">Algo de tiempo</option>	
+<option value="1">Poco tiempo</option>	
+<option value="0">Ningun momento</option>
+</select>
+<br>
+<br>
+
+MEMORIA
+<BR>
+<BR>
+
+15. ¿En las ultimas cuatro semanas, ha tenido algún problema con su memoria?
+<br>
+<br>
+<select name="memor" id="memor" onchange="validar();">
+<option value="">Seleccione...</option>
+<option value="5">todo el tempo</option>	
+<option value="4">la mayoría del tiempo</option>
+<option value="3">poco del tiempo</option>
+<option value="2">Algo de tiempo</option>	
+<option value="1">Poco tiempo</option>	
+<option value="0">Ningun momento</option>
+</select>
+<br>
+<br>
+
+
+16. ¿En las ultimas cuatro semanas, ha tenido problemas para recordar cosas que la gente te dice?
+<br>
+<br>
+<select name="recordar" id="recordar" onchange="validar();">
+<option value="">Seleccione...</option>
+<option value="5">todo el tempo</option>	
+<option value="4">la mayoría del tiempo</option>
+<option value="3">poco del tiempo</option>
+<option value="2">Algo de tiempo</option>	
+<option value="1">Poco tiempo</option>	
+<option value="0">Ningun momento</option>
+</select>
+<br>
+<br>
+
+CONCENTRACIÓN
+<br>
+<img src="images/concentra.jpg" width="100" height=""  align="middle" border="0">
+<br>
+<br>
+
+17. ¿En las ultimas cuatro semanas, ha tenido problemas para concentrarse en la lectura?
+
+<br>
+<br>
+<select name="leer" id="leer" onchange="validar();">
+<option value="">Seleccione...</option>
+<option value="5">todo el tempo</option>	
+<option value="4">la mayoría del tiempo</option>
+<option value="3">poco del tiempo</option>
+<option value="2">Algo de tiempo</option>	
+<option value="1">Poco tiempo</option>	
+<option value="0">Ningun momento</option>
+</select>
+<br>
+<br>
+
+
+<br>
+
+18. ¿En las ultimas cuatro semanas, ha tenido problemas para concentrarse en hacer una cosa a la vez?
+<br>
+<br>
+<select name="una" id="una" onchange="validar();">
+<option value="">Seleccione...</option>
+<option value="5">todo el tempo</option>	
+<option value="4">la mayoría del tiempo</option>
+<option value="3">poco del tiempo</option>
+<option value="2">Algo de tiempo</option>	
+<option value="1">Poco tiempo</option>	
+<option value="0">Ningun momento</option>
+</select>
+<br>
+<br>
+
+
+Las siguientes preguntas son sobre los problemas que puede tener con ciertas actividades  (causado por su medicamento antiepileptico)
+<br>
+<br>
+
+
+ACTIVIDADES
+<BR>
+<BR>
+
+19. ¿En las ultimas cuatro semanas, ha tenido problemas para concentrarse en hacer una cosa a la vez?
+<br>
+<br>
+<select name="actividades" id="actividades" onchange="validar();">
+<option value="">Seleccione...</option>
+<option value="5">todo el tempo</option>	
+<option value="4">la mayoría del tiempo</option>
+<option value="3">poco del tiempo</option>
+<option value="2">Algo de tiempo</option>	
+<option value="1">Poco tiempo</option>	
+<option value="0">Ningun momento</option>
+</select>
+<br>
+<br>
+
+CONDUCCIÓN
+
+<br>
+<img src="images/conducir.jpg" width="100" height=""  align="middle" border="0">
+
+<br>
+<br>
+
+Las suguientes preguntas se refieren a como se siente acerca de las convulsiones
+
+<br>
+<br>
+
+20. ¿En las ultimas cuatro semanas, como se siene acerca de las convulsiones?
+<br>
+<br>
+<select name="conduccion" id="conduccion" onchange="validar();">
+<option value="">Seleccione...</option>
+<option value="5">todo el tempo</option>        
+<option value="4">la mayoría del tiempo</option>
+<option value="3">poco del tiempo</option>
+<option value="2">Algo de tiempo</option>       
+<option value="1">Poco tiempo</option>  
+<option value="0">Ningun momento</option>
+</select>
+<br>
+<br>
+
+21. ¿Que tan temeroso esta de tener un ataque durante el próximo mes?
+<br>
+<br>
+<select name="temeroso" id="temeroso" onchange="validar();">
+<option value="">Seleccione...</option>
+<option value="5">todo el tempo</option>        
+<option value="4">la mayoría del tiempo</option>
+<option value="3">poco del tiempo</option>
+<option value="2">Algo de tiempo</option>       
+<option value="1">Poco tiempo</option>  
+<option value="0">Ningun momento</option>
+</select>
+<br>
+<br>
+
+
+
+22. ¿Te preocupas por lastimarte durante una convulsión?
+<br>
+<br>
+<select name="lastimar" id="lastimar" onchange="validar();">
+<option value="">Seleccione...</option>
+<option value="5">todo el tempo</option>        
+<option value="4">la mayoría del tiempo</option>
+<option value="3">poco del tiempo</option>
+<option value="2">Algo de tiempo</option>       
+<option value="1">Poco tiempo</option>  
+<option value="0">Ningun momento</option>
+</select>
+<br>
+<br>
+
+
+23. ¿Que tan preocupado está usted de los problemas sociales o se avergüenza de tener otra convulsión el próximo mes?
+<br>
+<br>
+<select name="verguenza" id="verguenza" onchange="validar();">
+<option value="">Seleccione...</option>
+<option value="5">todo el tempo</option>        
+<option value="4">la mayoría del tiempo</option>
+<option value="3">poco del tiempo</option>
+<option value="2">Algo de tiempo</option>       
+<option value="1">Poco tiempo</option>  
+<option value="0">Ningun momento</option>
+</select>
+<br>
+<br>
+
+24. ¿Que tan preocupado está usted de que los medicamentos que esté tomando sean malos para usted si los toma durante mucho tiempo?
+<br>
+<br>
+<select name="malo" id="malo" onchange="validar();">
+<option value="">Seleccione...</option>
+<option value="5">todo el tempo</option>        
+<option value="4">la mayoría del tiempo</option>
+<option value="3">poco del tiempo</option>
+<option value="2">Algo de tiempo</option>       
+<option value="1">Poco tiempo</option>  
+<option value="0">Ningun momento</option>
+</select>
+<br>
+<br>
+
+Para cada uno de estos problemas, escoja un número para saber cuánto le molestan en una escala de 1 a 5, donde 1 = nada molesto, y 5 = extremadamente molesto.
+
+
+<br>
+<br>
+25. convulsiones
+<br>
+<br>
+<select name="convulsion" id="convulsion" onchange="validar();">
+<option value="">Seleccione...</option>
+<option value="5">5</option>    
+<option value="4">4</option>
+<option style="background:url 5.png no-repeat center left; padding-left:20px;">6</option>       
+<option value="3">3</option>
+<option value="2">2</option>    
+<option value="1">1</option>    
+<option value="0">0</option>
+</select>
+<br>
+<br>
+
+
+26. Dificultades de memoria
+
+<br>
+<br>
+<select name="memoria" id="memoria" onchange="validar();">
+<option value="">Seleccione...</option>
+<option value="5">5</option>    
+<option value="4">4</option>
+<option style="background:url 5.png no-repeat center left; padding-left:20px;">6</option>       
+<option value="3">3</option>
+<option value="2">2</option>    
+<option value="1">1</option>    
+<option value="0">0</option>
+</select>
+<br>
+<br>
+
+27. Limitaciones de trabajo
+<br>
+<br>
+<select name="limitacion" id="limitacion" onchange="validar();">
+<option value="">Seleccione...</option>
+<option value="5">5</option>    
+<option value="4">4</option>
+<option style="background:url 5.png no-repeat center left; padding-left:20px;">6</option>       
+<option value="3">3</option>
+<option value="2">2</option>    
+<option value="1">1</option>    
+<option value="0">0</option>
+</select>
+<br>
+<br>
+
+28. Limitaciones sociales
+<br>
+<br>
+<select name="limitacions" id="limitacions" onchange="validar();">
+<option value="">Seleccione...</option>
+<option value="5">5</option>    
+<option value="4">4</option>
+<option style="background:url 5.png no-repeat center left; padding-left:20px;">6</option>       
+<option value="3">3</option>
+<option value="2">2</option>    
+<option value="1">1</option>    
+<option value="0">0</option>
+</select>
+<br>
+<br>
+
+29. Efectos físicos de la medicación antiepiléptica
+<br>
+<br>
+<select name="efisico" id="efisico" onchange="validar();">
+<option value="">Seleccione...</option>
+<option value="5">5</option>    
+<option value="4">4</option>
+<option style="background:url 5.png no-repeat center left; padding-left:20px;">6</option>       
+<option value="3">3</option>
+<option value="2">2</option>    
+<option value="1">1</option>    
+<option value="0">0</option>
+</select>
+<br>
+<br>
+
+
+30. Efectos mentales de la medicación antiepiléptica
+<br>
+<br>
+<select name="emental" id="emental" onchange="validar();">
+<option value="">Seleccione...</option>
+<option value="5">5</option>    
+<option value="4">4</option>
+<option style="background:url 5.png no-repeat center left; padding-left:20px;">6</option>       
+<option value="3">3</option>
+<option value="2">2</option>    
+<option value="1">1</option>    
+<option value="0">0</option>
+</select>
+<br>
+<br>
+
+<br>
+
+Observaciones
+<br>
+<textarea name="Observaciones" id="Observaciones" cols="50" rows="5"></textarea>
+
+<br>
+<br>
+
+Adjuntar archivo:
+<br>
+<input type="file" name="archivo" id="archivo">
+<br>
+<br>
+
+<button>Enviar encuesta</button>
+<br>
+
+</form>
+
+<div id="resultado" style="color: red; font-size: 11px"></div>
+
+</body>
+</html>
+
+

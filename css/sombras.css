@@ -1,0 +1,12 @@
+/* Estilos para el manejo de sombras */
+
+
+h1{
+   text-shadow: 3px 3px 2px #696;
+   color: #666
+}
+/*h2{
+   text-shadow: 3px 3px 2px #696;
+   color: #666;
+}
+*/

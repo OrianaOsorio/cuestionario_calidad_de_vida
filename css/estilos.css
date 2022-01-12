@@ -1,0 +1,41 @@
+
+	/* EStilos paralos contenidos genericos de html*/
+
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Roboto');
+
+
+body {
+	font-family: 'Indie Flower','Roboto',"Verdana"; /*fuentes de google: https://fonts.google.com*/
+}
+
+
+
+p {
+	font-size: 13px;
+
+}
+
+img {
+	width: 250px;
+	height: 300px;
+}
+
+table {
+	width: 100%;
+	background: #000;
+}
+
+
+
+th {
+	font-size: 20px;
+	font-family: "Arial";
+	background: #ccc; /*fondo*/
+	color: #fff; /*color del texto*/
+}
+
+td {
+	background: #fff;
+	text-align: center;/*alinear un texto*/
+}
+

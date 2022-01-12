@@ -1,0 +1,38 @@
+
+	/* EStilos paralos contenidos genericos de html*/
+
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Roboto');
+
+/* crear contenedor para manejo de textos*/
+
+/*definir un objeto que se llama formatotexto*/
+.formatotexto {
+	font-family: 'Roboto';
+	font-size: 20px;
+	background: blue;
+	color: #fff;
+}   
+
+
+/* crear estilos pero para un id o elemento 
+particular de htnl*/
+
+#tablaprincipal{
+	width: 100%;
+	font-family: 'verdana';
+	background: #000;
+}
+
+#tablaprincipal th {
+	background: green;
+	font-size: 30px;
+	color: #fff;
+
+}
+
+#tablaprincipal td {
+	background: green;
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+}

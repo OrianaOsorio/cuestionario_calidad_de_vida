@@ -1,0 +1,27 @@
+
+/*
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Roboto');
+
+
+body {
+	
+	background: #CFBDCF;
+	font-family: 'Indie Flower','Roboto',"Verdana"; /*fuentes de google: https://fonts.google.com*/
+}
+
+select {
+	font-size: 14px;
+	
+}
+
+h1{
+   text-shadow: 3px 3px 2px #696;
+   color: #666
+}
+
+
+

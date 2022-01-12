@@ -1,0 +1,70 @@
+
+	/* EStilos paralos contenidos genericos de html*/
+
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Roboto');
+
+
+body {
+	font-family: 'Indie Flower','Roboto',"Verdana"; /*fuentes de google: https://fonts.google.com*/
+}
+
+
+
+
+.col1 {
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: solid;
+	font-size: 11px;
+	font-family: 'verdana';
+	width: 48%;
+	padding: 11px 11px 11px 11px;
+	float: left;
+	text-align: center
+
+
+	 
+}
+
+
+
+.col2 {
+	clear: left;/*limpia el estilo*/
+	width: 100%;
+	
+}
+
+.col2 {
+	width: 32%;
+	float: left;
+	background-color: #ccc;
+	font-size: 15px;
+	font-family: 'Arial';
+	color: red;
+	padding: 15px 15px 15px 15px;
+	vertical-align: center;
+	text-align: center;
+	
+}
+
+.col2 img{
+	width: 250px;
+	height: 250px;
+	border-radius: 143px 156px 0px 200px;
+-moz-border-radius: 143px 156px 0px 200px;
+-webkit-border-radius: 143px 156px 0px 200px;
+border: 0px solid #000000;
+}
+
+th {
+	font-size: 20px;
+	font-family: "Arial";
+	background: ''; /*fondo*/
+	color: black; /*color del texto*/
+}
+
+td {
+	background: #fff;
+	text-align: center;/*alinear un texto*/
+}

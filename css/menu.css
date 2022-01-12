@@ -1,0 +1,78 @@
+/*Estilos para continuar el Menu*/
+@import url('https://fonts.googleapis.com/css?family=Roboto')
+body{
+	font-family: 'Roboto',"Verdana";
+}
+/*1.Limpiar el espacio por defecto que tiene el body 
+o cualquier elemento*/
+*{
+	margin: 0px;
+	padding: 0px;
+}
+/*2. A la etiqueta header le vamos a dar un tamaño max de la pantalla
+y que el margen sea automatica*/
+header{
+	margin: auto;
+	width: 100%;
+}
+/*3. Al ul y el li quitarle la viñeta*/
+ul{
+	list-style: none;
+
+}
+
+/*3.1 Indicar que todos los elementos de una 
+clase se ubiquen a la izquierda*/
+
+.navegacion > li {
+	float: left;
+
+} /*Cuando se agrega el mayor que busque ese elemento 
+(buscar un elemento dentro de una clase o un id) */
+
+/*4. A los li colocarles tamaño y que se ubiquen 
+apilados a la izquierda*/
+.navegacion li{
+	width: 20%;
+	background-color: #000;
+	color: #fff;
+	
+
+}
+/*5. Como dentro del li hay un href hay que darles propiedaes a este*/
+.navegacion li a{
+	color: #fff;
+	/*Este estilo le quita la raya del href*/
+	text-decoration: none;
+	padding: 10px 12px;/*imagenes internas de cada elemento, espaciamiento interno*/
+
+}
+
+/*6. Cuando se ubique encima el mouse que cambie de color (hover)*/
+/*cuando tiene los dos puntos esta entrando a las 
+propiedades del elemento*/
+.navegacion li:hover {
+	background-color: red;
+	
+}/*7. Ocultar el submenu cuando se presente*/
+.navegacion li ul{
+	display: none;
+	position: absolute;
+	min-width: 140px;
+}
+/*8. Cuando se pase por encima de un li y este contenga 
+un ul que lo muestre*/
+.navegacion li:hover > ul{
+	display: block;/*que muestre o despliegue el bloque de contenido*/
+}
+/*9. Ubicar cada elemento del submenu ul que esta
+en el li cargado*/
+.navegacion li ul li{
+	position: relative;
+	width: 140px;
+}
+/*10. Se usa para casos dentro de un li interno*/
+.navegacion li ul li ul{
+	right: -140px;
+	top: 0px;
+}

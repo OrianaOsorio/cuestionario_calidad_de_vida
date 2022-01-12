@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto')
+body{
+	font-family: 'Roboto',"Verdana";
+}
+/*h1{
+	text-shadow: 1px 2px #999;
+}
+h2{
+	text-shadow: 3px 3px 2px #696;
+	color: #666;
+}*/
+
+/*div {
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	width: 48%;
+	padding: 10px 10px 10px 10px;
+	float: left;
+
+}*/
+
+
+
+.col1 {
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: solid;
+	width: 48%;
+	padding: 10px 10px 10px 10px;
+	float: left;
+}
+
+
+
+.col2 {
+	clear: left;/*limpia el estilo*/
+	width: 100%;
+	
+}
+
+.col3 {
+	width: 32%;
+	float: left;
+	background-color: #ccc;
+	padding: 10px 10px 10px 10px;
+	vertical-align: center;
+	text-align: center;
+}
+
+.col3 img{
+	width: 250px;
+	height: 250px;
+	border-radius: 143px 156px 0px 200px;
+-moz-border-radius: 143px 156px 0px 200px;
+-webkit-border-radius: 143px 156px 0px 200px;
+border: 0px solid #000000;
+}
+
